@@ -1,4 +1,4 @@
-# trustpilot
+# facebook likes
 
 [![Build Status](https://travis-ci.org/sloev/facebooklikes.svg?branch=master)](https://travis-ci.org/sloev/facebooklikes) [![Latest Version](https://img.shields.io/pypi/v/facebooklikes.svg)](https://pypi.python.org/pypi/facebooklikes) [![Python Support](https://img.shields.io/pypi/pyversions/facebooklikes.svg)](https://pypi.python.org/pypi/facebooklikes)
 
