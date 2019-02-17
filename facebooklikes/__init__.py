@@ -1,6 +1,6 @@
 
 __author__='johannes.valbjorn+facebooklikes@gmail.com'
-__version__='0.0.2'
+__version__='0.1.1'
 
 import urllib.parse
 import urllib.request
@@ -25,7 +25,7 @@ def get_facebook_likes_for_page(page='OfficialEyeHateGod'):
     if not unit.isdigit():
         likes, unit = likes[:-1], likes[-1:]
         multiplier = __unit_lookup[unit]
-        likes = int(likes) * multiplier
+        likes = float(likes) * multiplier
         return likes
     return int(likes)
 
@@ -34,4 +34,4 @@ def get_facebook_likes_from_facebook_url(facebook_url):
     if facebook_url.endswith('/'):
         facebook_url = facebook_url[:-1]
     page = facebook_url.rsplit('/', 1)[1]
-    return get_facebook_likes(page)
+    return get_facebook_likes_for_page(page)
